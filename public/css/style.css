@@ -1,0 +1,302 @@
+/* 
+ * File: style.css
+ * Author: [Your Name]
+ * StudentID: [Your StudentID]
+ * Date: [Current Date]
+ * Description: This file contains the styles for the portfolio site.
+*/
+@font-face {
+  font-family: Play;
+  src: url("/public/fonts/Play-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Play;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  min-width: 100vw;
+  height: 100vh;
+  background-color: #61777f;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header {
+  padding: 1em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+header .left img {
+  width: 20rem;
+  margin: -20%;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+header nav ul li {
+  font-size: 1.2rem;
+}
+
+button, a {
+  cursor: pointer !important;
+}
+
+.home-page .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2em;
+  gap: 2rem;
+  margin: 0 auto;
+}
+.home-page .wrapper .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: -moz-max-content;
+  width: max-content;
+  line-height: 1.5;
+}
+.home-page .wrapper .intro h1 {
+  font-size: 3rem;
+}
+.home-page .wrapper .intro p {
+  font-size: 1.5rem;
+  max-width: 40rem;
+}
+.home-page .wrapper .intro a {
+  background-color: white;
+  padding: 0.25em 1em;
+  color: #61777f;
+  border-radius: 100rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.home-page .wrapper .mission-statment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: -moz-max-content;
+  width: max-content;
+  line-height: 1.5;
+}
+.home-page .wrapper .mission-statment h1 {
+  font-size: 3rem;
+}
+.home-page .wrapper .mission-statment p {
+  font-size: 1.5rem;
+  max-width: 40rem;
+}
+.home-page .wrapper .mission-statment a {
+  background-color: white;
+  padding: 0.25em 1em;
+  color: #61777f;
+  border-radius: 100rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.home-page .wrapper .mission-statment ul {
+  padding-left: 1em;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+.home-page .wrapper .mission-statment ul li {
+  list-style: disc;
+}
+
+.about-me-page .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5em;
+  gap: 2rem;
+  align-items: center;
+}
+.about-me-page .wrapper .left img {
+  border-radius: 2rem;
+  height: 50rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-me-page .wrapper .right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.about-me-page .wrapper .right h1 {
+  font-size: 3rem;
+}
+.about-me-page .wrapper .right p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 50ch;
+  margin-top: 0.5rem;
+}
+.about-me-page .wrapper .right a {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  background-color: white;
+  padding: 0.5em 1em;
+  border-radius: 100rem;
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+.about-me-page .wrapper .right a span {
+  color: #61777f;
+}
+.about-me-page .wrapper .right a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.about-me-page .wrapper .right a svg path {
+  fill: #61777f;
+}
+
+.projects-page .wrapper .projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5em;
+  gap: 2rem;
+  align-items: center;
+}
+.projects-page .wrapper .projects h1 {
+  grid-column: -1/1;
+  text-align: center;
+  font-size: 3rem;
+}
+.projects-page .wrapper .projects .project {
+  background-color: white;
+  color: #61777f;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.projects-page .wrapper .projects .project * {
+  color: #61777f;
+}
+.projects-page .wrapper .projects .project .project-details {
+  padding: 2em;
+}
+.projects-page .wrapper .projects .project .project-details p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 50ch;
+  margin-top: 0.5rem;
+}
+
+.services-page .wrapper .services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5em;
+  gap: 2rem;
+  align-items: center;
+}
+.services-page .wrapper .services h1 {
+  grid-column: -1/1;
+  text-align: center;
+  font-size: 3rem;
+}
+.services-page .wrapper .services .service {
+  background-color: white;
+  color: #61777f;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.services-page .wrapper .services .service * {
+  color: #61777f;
+}
+.services-page .wrapper .services .service .service-details {
+  padding: 2em;
+}
+.services-page .wrapper .services .service .service-details p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 50ch;
+  margin-top: 0.5rem;
+}
+
+.contact-page .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 4rem;
+  margin-top: 5rem;
+}
+.contact-page .wrapper .contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.contact-page .wrapper .contact-info h1 {
+  font-size: 3rem;
+}
+.contact-page .wrapper .contact-info .info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.contact-page .wrapper .contact-info .info ul {
+  padding-left: 2em;
+}
+.contact-page .wrapper .contact-info .info ul li {
+  list-style: disc;
+}
+.contact-page .wrapper .contact-form form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.contact-page .wrapper .contact-form form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.contact-page .wrapper .contact-form form .form-group input {
+  all: unset;
+  background-color: white;
+  color: #61777f;
+  padding: 0.5em;
+  border-radius: 0.3rem;
+  width: 18rem;
+}
+.contact-page .wrapper .contact-form form .form-group textarea {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #61777f;
+  font-family: inherit !important;
+  padding: 0.5em;
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 11rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+.contact-page .wrapper .contact-form form .form-buttons button {
+  all: unset;
+  background-color: green;
+  color: white;
+  padding: 0.4em 1em;
+  border-radius: 100rem;
+}/*# sourceMappingURL=style.css.map */
